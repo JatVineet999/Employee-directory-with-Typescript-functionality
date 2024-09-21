@@ -87,7 +87,7 @@ You can adjust the port settings in the <b>.vscode/settings.json</b> file if nee
 
 
 ## Contact
-<h3 align="center">Sanju Chillukuri</h3>
+<h3 align="center">Vineet Pilania</h3>
 <p align="center">
   <a href="pilaniavineet@gmail.com"><img src="https://img.shields.io/badge/Email-%23EA4335.svg?&style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://www.linkedin.com/in/jatvineet999/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
