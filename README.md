@@ -27,7 +27,7 @@
 ## About The Project
 </br>
 
-![demo-page](https://raw.githubusercontent.com/Sanjuchilukuri/employee-directory-typescript/main/src/assets/demo-page.png)
+![demo-page](https://github.com/JatVineet999/Employee-directory-with-Typescript-functionality/blob/main/src/assets/images/demo-page.png)
 </br>
 </br>
 The employee directory project offers functionalities for manipulating employee data, including the ability to add and remove employees, sort them based on various criteria, and modify their roles.
@@ -89,11 +89,9 @@ You can adjust the port settings in the <b>.vscode/settings.json</b> file if nee
 ## Contact
 <h3 align="center">Sanju Chillukuri</h3>
 <p align="center">
-  <a href="sanjuchilukuri1@gmail.com"><img src="https://img.shields.io/badge/Email-%23EA4335.svg?&style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://www.linkedin.com/in/sanju-chilukuri/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="pilaniavineet@gmail.com"><img src="https://img.shields.io/badge/Email-%23EA4335.svg?&style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/jatvineet999/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
-
-Project Link: [https://github.com/Technovert-Product-Engineering/4-employee-directory-typescript-sanju-](https://github.com/Technovert-Product-Engineering/4-employee-directory-typescript-sanju-)
 
 
 ## Acknowledgments
