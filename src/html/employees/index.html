@@ -1,0 +1,206 @@
+<main class="main">
+  <section class="employee-header">
+    <div class="employee-header-text-content">
+      <h4>Employees</h4>
+      <p>
+        Find all of your company's employee accounts and their associated roles.
+      </p>
+    </div>
+    <div class="employee-header-buttons">
+      <button class="btn btn-export" id="btnExport">
+        <span class="export-font icon-Export"></span>EXPORT
+      </button>
+      <button
+        class="btn btn-add-employee"
+        onclick="window.location.href = 'index.html#add-employee'"
+      >
+        <img
+          src="../../../src/assets/images/Interface/Add.svg"
+          alt="add-icon"
+        />ADD EMPLOYEE
+      </button>
+    </div>
+  </section>
+  <section class="alphabetical-filter">
+    <span
+      class="icon-filter"
+      onclick="employeeDashboard.resetAlphabeticalFilter();"
+    ></span>
+    <ul class="filter-alphabets" id="alphabeticalFilter"></ul>
+  </section>
+
+  <section class="filter-menu">
+    <div class="filter-menu-container">
+      <div class="filter-selction-menu">
+        <div class="filter-content">
+          <p>Filter</p>
+          <img src="../../../src/assets/images/filter-icon.png" alt="filter" />
+        </div>
+        <div class="status-dropdown">
+          <select
+            name="status"
+            class="filter-dropdowns"
+            id="statusDropdown"
+            onchange="employeeDashboard.displayFilterButtons()"
+          >
+            <option value="Status">Status</option>
+            <option value="Active">Active</option>
+            <option value="In-Active">In-Active</option>
+          </select>
+        </div>
+        <div class="Location-dropdown">
+          <select
+            name="location"
+            class="filter-dropdowns"
+            id="locationDropdown"
+            onchange="employeeDashboard.displayFilterButtons()"
+          >
+            <option value="Location">Location</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="work-from-home">work-from-home</option>
+            <option value="Seatle">Seatle</option>
+          </select>
+        </div>
+        <div class="department-dropdown">
+          <select
+            name="department"
+            class="filter-dropdowns"
+            id="departmentDropdown"
+            onchange="employeeDashboard.displayFilterButtons()"
+          >
+            <option value="Department">Department</option>
+            <option value="Sales">Sales</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Software-Development">Software-Development</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-menu-buttons" id="filterButtons">
+        <button
+          class="btn btn-reset-filter"
+          onclick="employeeDashboard.resetDropDownFilters()"
+        >
+          Reset
+        </button>
+        <button
+          class="btn btn-apply-filter"
+          onclick="employeeDashboard.applyDropdownFilters()"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="employees-details">
+    <div class="employees-details-container" id="employeeDetailsContainer">
+      <div class="employees-details-container-header">
+        <div>
+          <span class="icon-arrow-turn-left--down"></span
+          ><button
+            class="btn btn-delete"
+            id="btnDelete"
+            onclick="employeeDashboard.deleteEmployee()"
+          >
+            Delete
+          </button>
+        </div>
+        <span class="icon-table-add"></span>
+      </div>
+      <div class="employee-main-table">
+        <table class="employee-table">
+          <thead class="empl-table-header">
+            <tr class="emp-table-row">
+              <th class="table-heading">
+                <input
+                  type="checkbox"
+                  class="employee-select"
+                  id="employeeSelect"
+                  onclick="employeeDashboard.updateEmployeesTableCheckbox(null,this.checked,true)"
+                />
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>USER</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('empName');"
+                  />
+                </div>
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>LOCATION</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('location');"
+                  />
+                </div>
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>DEPARTMENT</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('dept');"
+                  />
+                </div>
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>ROLE</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('role');"
+                  />
+                </div>
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>EMP NO</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('empNo');"
+                  />
+                </div>
+              </th>
+              <th class="table-heading employee-status-header">
+                <div>
+                  <span>STATUS</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                  />
+                </div>
+              </th>
+              <th class="table-heading">
+                <div>
+                  <span>JOIN DT</span>
+                  <img
+                    src="../../../src/assets/images/up-down-arrow.png"
+                    alt="sort-icon"
+                    onclick="employeeDashboard.sortTableDataByKey('joinDate');"
+                  />
+                </div>
+              </th>
+              <td class="row-edit-container">
+                <button class="three-dots">
+                  <img
+                    src="../../../src/assets/images/load-more.png"
+                    alt="three-dot"
+                  />
+                </button>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="employeeTableBody" id="employeeTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>

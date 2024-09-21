@@ -1,0 +1,197 @@
+<main class="main">
+  <section class="add-employee-header"><h3>Add Employee</h3></section>
+  <form id="add-employee-form">
+    <div class="employee-image-upload d-flex employee-profile-upload">
+      <div class="employee-image-preview flex-container">
+        <img
+          src="../../../src/assets/images/profile-pic-upload.png"
+          alt="dummy-profile-image"
+          class="employee-profile-img"
+          id="defaultProfile"
+        />
+      </div>
+      <label for="img" name="img" class="profile-upload-button btn-upload b-5"
+        >Upload Profile Picture</label
+      >
+      <input
+        type="file"
+        name="img"
+        id="img"
+        accept="image/*"
+        onchange="addemployeeForm.checkImageSize(event)"
+      />
+      <span class="error-message"></span>
+    </div>
+    <h3>Personal Information</h3>
+    <div class="form-input-container">
+      <label for="empNo" class="form-input-label">Emp No</label>
+      <input
+        type="text"
+        id="empNo"
+        name="empNo"
+        placeholder="Employee Number"
+        title="Please Enter a Valid Emp. Number"
+        pattern="[A-Z]{2}[0-9]*"
+        class="form-input"
+        required
+      />
+      <span class="error-message"></span>
+    </div>
+    <div class="emp-details-container">
+      <div class="form-input-container">
+        <label for="fname" class="form-input-label">First Name</label>
+
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          class="form-input"
+          pattern="[A-Za-z ]*"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+      <div class="form-input-container">
+        <label for="lname" class="form-input-label">Last Name</label>
+
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+          pattern="[A-Za-z ]*"
+          class="form-input"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+      <div class="form-input-container">
+        <label for="dob" class="form-input-label">Date Of Birth</label>
+
+        <input
+          type="text"
+          id="dob"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          name="dob"
+          placeholder="Select"
+          class="form-input"
+        />
+      </div>
+    </div>
+    <div class="emp-details-container">
+      <div class="form-input-container">
+        <label for="email" class="form-input-label">Email Id</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Id"
+          title="Please Enter a Valid Email Address"
+          pattern="[a-z 0-9]+[.]{0,1}[a-z 0-9]+@[a-z]*.com"
+          class="form-input"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+      <div class="form-input-container">
+        <label for="mobile" class="form-input-label">Mobile Number</label>
+
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          class="form-input"
+          placeholder="0000000000"
+          pattern="[1-9][0-9]{9}"
+          minlength="10"
+          maxlength="10"
+        />
+      </div>
+    </div>
+    <h3>Employment Information</h3>
+    <div class="emp-info-details-container">
+      <div class="emp-info-container">
+        <label for="joinDate" class="form-input-label">Joining Date</label
+        ><br />
+        <input
+          name="joinDate"
+          id="joinDate"
+          class="form-input-joining"
+          placeholder="17/02/2024"
+          type="text"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+      <div class="emp-info-container">
+        <label for="location" class="form-input-label">Location</label><br />
+        <select name="location" id="location" class="emp-info-selector">
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Seatle">Seatle</option>
+          <option value="work-from-home">work-from-home</option>
+        </select>
+      </div>
+    </div>
+    <div class="emp-info-details-container" id="roleDepartments">
+      <div class="emp-info-container" id="rolesContainer"></div>
+      <div class="emp-info-container" id="departmentsContainer">
+        <label for="dept" class="form-input-label" id="departments"
+          >Department</label
+        ><br />
+        <select name="dept" id="dept" class="emp-info-selector">
+          <option value="UI/UX">UI/UX</option>
+          <option value="Software-Development">Software-Development</option>
+        </select>
+      </div>
+    </div>
+    <div class="emp-info-details-container">
+      <div class="emp-info-container">
+        <label for="managerAssigned" class="form-input-label"
+          >Assign Manager</label
+        ><br />
+        <select
+          name="managerAssigned"
+          id="managerAssigned"
+          class="emp-info-selector"
+          placeholder="Search"
+        >
+          <option value="Koni Aruva">koni Aruva</option>
+          <option value="Suresh Ventrapati">Suresh Ventrapati</option>
+        </select>
+      </div>
+      <div class="emp-info-container">
+        <label for="projectAssigned" class="form-input-label"
+          >Assign Project</label
+        ><br />
+        <select
+          name="projectAssigned"
+          id="projectAssigned"
+          class="emp-info-selector"
+        >
+          <option value="TravelPro">TravelPro</option>
+          <option value="Employee-Management-Project">
+            Employee-Management-Project
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="form-buttons">
+      <button
+        class="btn btn-cancel"
+        id="btnCancel"
+        type="reset"
+        onclick="addemployeeForm.modifyCancelButton();"
+      >
+        Cancel
+      </button>
+      <button class="btn btn-add-employee" type="submit" id="submit">
+        Add Employee
+      </button>
+    </div>
+  </form>
+</main>

@@ -1,0 +1,82 @@
+  <main class="main">
+        <section class="add-roles-header"><h3>Add Roles</h3></section>
+        <form id="frmRole">
+          <div class="role-details-container">
+            <div class="form-input-container">
+              <label for="role" class="form-input-label">Role Name</label>
+              <input
+                type="text"
+                id="role"
+                name="role"
+                placeholder="Role Name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="role-info-container">
+              <label for="dept" class="form-input-label">Department</label
+              ><br />
+              <select name="dept" id="dept" class="role-info-selector">
+                <option value="UI/UX">UI/UX</option>
+                <option value="Software-Development">
+                  Software-Development
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="description-container">
+            <label for="description" class="form-input-label"
+              >Description</label
+            >
+            <textarea
+              name="description"
+              class="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Text"
+            ></textarea>
+            <div class="role-location-container">
+              <label for="location" class="form-input-label">Location</label
+              ><br />
+              <select name="location" id="location" class="role-info-selector">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Seatle">Seatle</option>
+                <option value="work-from-home">work-from-home</option>
+              </select>
+            </div>
+          </div>
+          <div class="employeeAssign">
+            <label for="assignEmp" class="form-input-label"
+              >Assign Employees</label
+            ><br />
+            <div class="searchEmp">
+              <input
+                type="search"
+                class="searchEmpInput"
+                placeholder="Search for an Employee"
+                id="assignEmp"
+              />
+              <img
+                src="../../../src/assets/images/chevron-down-solid.svg"
+                alt="dropDwn"
+                class="dropDown"
+              />
+            </div>
+            <div class="d-flex" id="employeesAvailable"></div>
+          </div>
+          <section class="form-buttons">
+            <button
+              class="btn btn-cancel"
+              id="btnCancel"
+              type="reset"
+              onclick="refreshWindow()"
+            >
+              Cancel
+            </button>
+            <button class="btn btn-add-role" type="submit" id="submit">
+              Add Role
+            </button>
+          </section>
+        </form>
+      </main>

@@ -1,0 +1,135 @@
+@import url("common.css");
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 6.1em 4.17em 1fr;
+  grid-template-areas:
+    "employee-header"
+    "filter-menu"
+    "employees-details";
+}
+
+.header-menu {
+  grid-area: user-options-section;
+  background-color: white;
+  position: relative;
+  display: flex;
+  padding-left: 2.1%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roles-header {
+  grid-area: employee-header;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2%;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+
+.roles-header-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 7%;
+  margin-top: 12%;
+}
+.roles-header-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.role-header-buttons {
+  display: flex;
+}
+.btn-add-role img {
+  margin: 0 5px 0 0;
+}
+.btn-add-role {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-right: 0;
+  font-size: medium;
+  padding: 6% 15%;
+  width: 11em;
+  font-weight: 600;
+  background-color: #f44848;
+}
+.roles-details {
+  grid-area: employees-details;
+  padding: 0.3% 1.5%;
+  border-radius: 10px;
+}
+
+.roles-card {
+  border: 1px solid #ebebeb;
+  padding: 2%;
+  color: #63708a;
+  width: 28.2%;
+  border-radius: 10px;
+  margin-bottom: 1.4%;
+  flex-wrap: wrap;
+}
+.department p {
+  margin: 2%;
+  font-size: small;
+}
+.roles-card-header {
+  display: flex;
+  margin-top: 5.7% 0 7% 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.roles-card-header h4 {
+  color: black;
+}
+.view-employees {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #6b6b6b;
+}
+.view-all-employees p {
+  font-size: small;
+  margin: 0;
+  margin-right: 1% !important;
+  margin: 0;
+}
+
+.icon-Vector {
+  font-size: smaller;
+}
+.roles-card-total-employees {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+.roles-card-total-employees p {
+  margin-top: 2%;
+}
+.department {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.department div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.department div img {
+  margin-right: 0.3em;
+}
+.roles-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

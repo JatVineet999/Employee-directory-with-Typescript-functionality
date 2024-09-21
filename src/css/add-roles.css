@@ -1,0 +1,174 @@
+@import url("common.css");
+
+.main {
+  grid-area: main;
+  grid-template-rows: minmax(2em, auto) 1fr;
+  display: grid;
+  grid-template-areas: "add-employee-header";
+  padding-left: 3%;
+}
+.header-menu {
+  grid-area: user-options-section;
+  background-color: white;
+  position: relative;
+  display: flex;
+  padding-left: 2.1%;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-roles-header {
+  grid-area: add-employee-header;
+}
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-input-label {
+  color: #6a707c;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: 0.1%;
+}
+.form-input {
+  margin-top: 5px;
+  padding: 0.5em;
+  width: 14em;
+  border: 2px solid #eaebef;
+  border-radius: 4px;
+}
+.role-details-container {
+  display: flex;
+  margin-top: 1.5%;
+  width: 60%;
+  gap: 7%;
+  justify-content: flex-start;
+}
+.role-info-container {
+  width: 33%;
+}
+.role-location-container {
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.role-info-selector {
+  border: none;
+  background-color: #f4f5f7;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0.7em;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5%;
+  width: 41.7%;
+  gap: 7%;
+  justify-content: flex-start;
+}
+.description {
+  margin-top: 5px;
+}
+.employeeAssign {
+  width: 41.7%;
+  margin-top: 1rem;
+}
+.dropDown {
+  width: 2%;
+}
+.searchEmp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  align-items: center;
+  border: 2px solid #eaebef;
+}
+.searchEmpInput {
+  width: 92%;
+  outline: none;
+  border: none;
+  height: 2.3em;
+}
+.dropDown {
+  margin-right: 3%;
+}
+.employeesAvailable {
+  border: 2px solid black;
+}
+.d-flex {
+  display: flex;
+  width: 101%;
+  height: 10rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.emp-info-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  margin-left: 1%;
+  font-family: "Noto Sans", Poppins, sans-serif;
+  color: #334562;
+}
+.employee-img {
+  width: 100%;
+  object-fit: contain;
+}
+.emp-profile-container {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1%;
+}
+.flex-container {
+  width: 98.1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #eaebef;
+  margin: 0.5% 0 0.5% 0%;
+}
+.select {
+  margin-right: 5px;
+  scale: 1.2;
+  width: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid #334562;
+}
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  border-radius: 20px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+  gap: 1%;
+  margin-bottom: 2%;
+}
+.btn-cancel {
+  background-color: #fbebeb;
+  padding: 1% 2%;
+  color: #f44848;
+}
+.btn-add-role {
+  background-color: #f44848;
+  padding: 1% 2%;
+  color: white;
+}
+.form-input:focus,
+.role-info-selector:focus,
+.description:focus {
+  border: 2px solid #4c9aff;
+}

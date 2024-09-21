@@ -1,0 +1,154 @@
+@import url("common.css");
+
+.main {
+  grid-area: main;
+  grid-template-rows: minmax(2em, auto) 1fr;
+  display: grid;
+  grid-template-areas: "add-employee-header";
+  padding-left: 3%;
+}
+.header-menu {
+  grid-area: user-options-section;
+  background-color: white;
+  position: relative;
+  display: flex;
+  padding-left: 2.1%;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-employee-header {
+  grid-area: add-employee-header;
+}
+.employee-profile-upload {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.btn-upload {
+  color: white;
+  background-color: #f44848;
+  padding: 1%;
+  border-radius: 4px;
+  margin-left: 3%;
+  cursor: pointer;
+}
+.Upload-profile-pic {
+  border-radius: 50%;
+}
+.form-input-label {
+  color: #6a707c;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: 0.1%;
+}
+.form-input {
+  margin-top: 5px;
+  padding: 0.5em;
+  width: 14em;
+  border: 2px solid #eaebef;
+  border-radius: 4px;
+}
+.emp-details-container {
+  display: flex;
+  margin-top: 1.5%;
+  width: 60%;
+  gap: 7%;
+  justify-content: flex-start;
+}
+.emp-info-container {
+  width: 30%;
+}
+.emp-info-details-container {
+  display: flex;
+  margin-top: 1.5%;
+  /* width: 60%; */
+  gap: 5%;
+  justify-content: flex-start;
+}
+.form-input-joining {
+  margin-top: 5px;
+  padding: 0.8em;
+  width: 93%;
+  border: 2px solid #eaebef;
+  border-radius: 4px;
+}
+.emp-info-selector {
+  border: none;
+  background-color: #f4f5f7;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0.9em;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+  gap: 1%;
+  margin-bottom: 2%;
+}
+.btn-cancel {
+  background-color: #fbebeb;
+  padding: 1% 2%;
+  color: #f44848;
+}
+.btn-add-employee {
+  background-color: #f44848;
+  padding: 1% 2%;
+  color: white;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img {
+  display: none;
+}
+
+.employee-image-upload {
+  width: 70%;
+}
+.employee-image-upload {
+  gap: 1.2rem;
+  align-items: center;
+}
+.employee-image-preview {
+  width: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.employee-profile-img,
+.edit-employee-profile {
+  width: 100%;
+  object-fit: contain;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.7rem;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+.form-input:focus,
+.emp-info-selector:focus {
+  border: none;
+  border: 2px solid #4c9aff;
+}
+.form-input,
+.emp-info-selector {
+  outline: none;
+}
+
+.show {
+  display: block;
+}
+.error {
+  border: 1px solid red;
+}

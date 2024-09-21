@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.22",
+    "html-webpack-plugin": "^5.6.0",
+    "source-map-loader": "^5.0.0",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}

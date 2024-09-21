@@ -1,0 +1,168 @@
+@import url("common.css");
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 6.1em 6.1em 1fr;
+  grid-template-areas:
+    "employee-header"
+    "role-description"
+    "employees-details";
+}
+
+.header-menu {
+  grid-area: user-options-section;
+  padding: 0 2.1%;
+  padding-top: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.role-details-header {
+  grid-area: employee-header;
+  display: flex;
+  padding: 0 2%;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+
+.role-details-header-text-content div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.role-details-header-text-content {
+  width: 60%;
+}
+.role-details-header-text-content div p {
+  margin: 0;
+}
+.role-details-header-text-content div img {
+  margin: 0 0.5em 0 0.5em;
+  padding-top: 0 !important;
+}
+.role-details-header-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 1.5em;
+  margin-top: 1.4em;
+}
+.role-details-header-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.role-description-header {
+  grid-area: role-description;
+  display: flex;
+  padding: 0 2%;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+
+.role-description-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 1%;
+  margin-top: 0.7%;
+}
+.role-description-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.role-header-buttons {
+  display: flex;
+  width: 40%;
+  align-content: center;
+  justify-content: flex-end;
+}
+.btn-add-role img {
+  margin: 0 5px 0 0;
+}
+.btn-add-role {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-right: 0;
+  font-size: medium;
+  padding: 1em 2em;
+  font-weight: 600;
+  background-color: #f44848;
+}
+.roles-details {
+  grid-area: employees-details;
+  padding: 0.3% 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.roles-card {
+  border: 1px solid #ebebeb;
+  padding: 2%;
+  color: #63708a;
+  width: 28%;
+  border-radius: 10px;
+  margin-bottom: 1.4%;
+  flex-wrap: wrap;
+}
+.department p {
+  margin: 2%;
+  font-size: small;
+}
+.roles-card-header p {
+  font-size: small;
+  margin: 0%;
+  color: black;
+}
+.roles-card-header {
+  display: flex;
+  margin: 3.7% 0 4% 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.roles-card-header div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2%;
+}
+.roles-card-header h5 {
+  color: black;
+  margin: 0 0 1% 0;
+}
+.view-all-employees p {
+  font-size: small;
+  margin: 0;
+  margin-right: 1% !important;
+  margin: 0;
+}
+.icon-Vector {
+  font-size: smaller;
+}
+.department div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.department div span,
+img {
+  margin-right: 0.3em;
+  color: black;
+}
+.view-all-employees {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}

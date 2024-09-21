@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/icomoon.eot?efv4m4");
+  src: url("../assets/fonts/icomoon.eot?efv4m4#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/icomoon.ttf?efv4m4") format("truetype"),
+    url("../assets/fonts/icomoon.woff?efv4m4") format("woff"),
+    url("../assets/fonts/icomoon.svg?efv4m4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@600;700;900&display=swap");
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-Add:before {
+  content: "\e91e";
+}
+.icon-Employees:before {
+  content: "\e924";
+}
+.icon-assign-user1:before {
+  content: "\e926";
+  color: #5f5f5f;
+}
+.icon-drop-right:before {
+  content: "\e900";
+}
+.icon-arrow-turn-left--down:before {
+  content: "\e90c";
+  color: #455573;
+}
+.icon-Export:before {
+  content: "\e90d";
+  color: #8592a3;
+}
+.icon-filter:before {
+  content: "\e90e";
+  color: #f44848;
+}
+.icon-table-add:before {
+  content: "\e90f";
+}
+
+.icon-Roles:before {
+  content: "\e912";
+  color: #5f5f5f;
+}
+.icon-assign-user:before {
+  content: "\e913";
+  color: #5f5f5f;
+}
+.icon-mode:before {
+  content: "\e914";
+  color: #32475c;
+}
+.icon-notifications .notification-icon-part-a:before {
+  content: "\e915";
+  color: rgb(50, 71, 92);
+  opacity: 0.87;
+}
+.icon-notifications .notification-icon-part-b:before {
+  content: "\e916";
+  margin-left: -1.2001953125em;
+  color: rgb(255, 255, 255);
+}
+.icon-notifications .notification-icon-part-c:before {
+  content: "\e917";
+  margin-left: -1.2001953125em;
+  color: rgb(255, 62, 29);
+}
+.icon-categories:before {
+  content: "\e918";
+  color: #32475c;
+}
+.icon-language:before {
+  content: "\e919";
+  color: #32475c;
+}
+
+.icon-team_svgrepocom:before {
+  content: "\e929";
+}
+/* .icon-Vector-12:before {
+  content: "\e92a";
+} */
+.icon-email-svgrepocom:before {
+  content: "\e92b";
+  color: #080341;
+}
+
+.icon-Vector:before {
+  content: "\e908";
+  color: #4c4c4c;
+}
+.icon-edit:before {
+  content: "\e909";
+}

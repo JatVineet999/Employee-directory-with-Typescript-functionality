@@ -1,0 +1,441 @@
+@import url("./font.css");
+.container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 18% 82%;
+  grid-template-rows: 5.813em;
+  grid-template-areas:
+    "sidebar user-options-section"
+    "sidebar main";
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans", Poppins, sans-serif;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-handle-icon {
+  position: fixed;
+  left: 17%;
+  z-index: 999;
+  align-items: center;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #6b7075;
+}
+.sidebar {
+  grid-area: sidebar;
+  width: 18.5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 1px rgba(201, 194, 194, 0.1);
+  justify-content: space-between;
+  color: #6b7075;
+  position: fixed;
+  height: 100vh;
+}
+.container ul {
+  list-style-type: none;
+}
+.logo-container {
+  margin-left: 12%;
+  margin-top: 10%;
+  width: 10%;
+}
+.all-dashboard-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10% 0 5% 0;
+}
+.all-dashboard-heading-line {
+  background-color: #6b7075;
+  height: 1px;
+  width: 1em;
+  opacity: 0.3;
+  margin: 0 6.5% 0 0;
+}
+
+.all-dashboard p {
+  font-size: 0.75em;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
+.all-dashboard ul {
+  margin-left: 0%;
+  padding: 0;
+  margin-top: 0%;
+}
+.role-management-dashboard ul {
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 0;
+}
+.role-management-dashboard ul li {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+.all-dashboard ul li {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+.dashboard ul li a:hover {
+  background-color: #fee9e9;
+  border-radius: 5px;
+}
+
+.dashboard-selection-highlight {
+  background-color: #f44848;
+  width: 4px;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 2.6em;
+}
+.sidebarOptionActive {
+  display: flex;
+  margin-left: 9%;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sidebarOptionInactive {
+  margin-left: 9%;
+  width: 86.5%;
+}
+.sidebarOptionActive a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  background-color: #fee9e9;
+  padding: 0.7em 0.1em 0.7em 0.5em;
+  border-radius: 5px;
+}
+.sidebarOptionInactive-icon {
+  width: 0.5em;
+}
+.sidebarOptionInactive a {
+  display: flex;
+  padding: 0.6em 0.7em;
+  /* width: 80%; */
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebarOptionActive a div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  font-weight: 600;
+}
+.sidebarOptionInactive a div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  font-weight: 600;
+}
+.sidebarOptionInactive img {
+  margin: 0% 3% 0% 0%;
+
+  margin-bottom: 2px;
+}
+.sidebarOptionActive img {
+  margin: 0% 7% 0% 0%;
+}
+
+.role-management-dashboard-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 11px;
+}
+.role-management-dashboard-heading-line {
+  background-color: #6b7075;
+  height: 1px;
+  width: 1rem;
+  opacity: 0.3;
+  margin: 0;
+}
+
+.role-management-dashboard p {
+  margin-top: 6%;
+  font-size: 0.75em;
+  vertical-align: middle;
+  opacity: 0.5;
+  padding-left: 6.5%;
+  margin-bottom: 13px;
+}
+
+.app-update {
+  background-color: #fef6f6;
+  padding: 3% 3% 3% 6%;
+  border-radius: 15px;
+  margin: 3%;
+}
+.app-update-install {
+  color: #f44848;
+  font-size: small;
+  font-weight: 600;
+}
+.app-update-description {
+  font-size: medium;
+  opacity: 0.6;
+}
+.btn {
+  margin: 5px;
+  cursor: pointer;
+  padding: 4.7% 7%;
+  border-radius: 7px;
+  border: 0;
+  font-weight: 600;
+}
+.btn-dismiss {
+  background-color: #fde6e6;
+  color: #f44848;
+}
+.btn-accept {
+  color: white;
+  background-color: #f44848;
+}
+.user-options-section span a {
+  text-decoration: none;
+}
+.btn-accept a {
+  text-decoration: none;
+  color: white;
+}
+
+.user-options-section {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  font-size: 250%;
+  position: fixed;
+  margin-right: 1.3%;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.search-bar {
+  width: 67.2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.search-bar img {
+  margin-left: 22px;
+}
+.user-options-section span {
+  margin-top: 5px;
+}
+.user-options-section input {
+  width: 95%;
+  height: 40px;
+  border: 0px solid;
+  outline: none;
+  margin-left: 15px;
+}
+.user-options-section input::placeholder {
+  font-size: large;
+  opacity: 0.5;
+}
+.profile-name {
+  font-size: small;
+  margin-bottom: 0px;
+}
+.profile-role {
+  font-size: medium;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.nav-drop-down {
+  margin-bottom: 20px;
+  border: none;
+  margin-right: 20px;
+  margin-left: 0.825em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+.nav-drop-down:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.icon-none {
+  display: none;
+}
+.filter-dropdowns {
+  border: 1px solid #fbc9c9;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+  color: #606e87;
+  padding: 0.6em 0.5em;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+.filter-dropdowns:focus {
+  outline: none;
+  cursor: pointer;
+}
+.filter-menu {
+  display: flex;
+  grid-area: filter-menu;
+  padding: 0 1.5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.filter-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-content img {
+  width: 100%;
+  height: 15px;
+  margin-left: 10px;
+}
+.filter-menu-container {
+  background-color: #fdf2f2;
+  display: flex;
+  padding: 0.5% 0%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fbc9c9;
+  border-radius: 7px;
+  width: 100%;
+}
+.filter-selction-menu {
+  display: flex;
+  padding-left: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-selction-menu div {
+  display: flex;
+  margin-right: 10px;
+}
+.filter-selction-menu div p {
+  color: #f66767;
+  font-size: small;
+}
+
+.filter-menu-buttons {
+  display: flex;
+  padding-right: 0.3em;
+}
+.btn-reset-filter {
+  background-color: white;
+  color: #f44848;
+  border: 1px solid #f44848;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+.btn-apply-filter {
+  background-color: #f44848;
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+/* sidebar toggling */
+/* Add your common styles here */
+
+.container {
+  transition: all 0.3s ease;
+}
+
+.app-update {
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  transition: all 0.3s ease;
+}
+
+.sidebarOptionInactive span {
+  transition: all 0.3s ease;
+  display: list-item;
+}
+.sidebarOptionActive span {
+  transition: all 0.3s ease;
+  display: inline;
+}
+.role-management-dashboard-heading,
+.all-dashboard-heading {
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.sidebarOptionInactive-icon {
+  transition: all 0.3s ease;
+  display: inline;
+}
+
+.sidebar-handle-icon {
+  transition: all 0.3s ease;
+  left: 17%;
+}
+
+/* Add specific styles for collapsed state */
+
+.container.collapsed {
+  grid-template-columns: 5em 1fr;
+}
+.links.collapsed {
+  padding-right: 0;
+  width: 69%;
+}
+.app-update.collapsed {
+  display: none;
+}
+
+.sidebar.collapsed {
+  width: 5em;
+}
+
+.all-dashboard ul.collapsed {
+  margin-left: 9%;
+  margin-top: 19%;
+}
+
+.role-management-dashboard ul.collapsed {
+  margin-left: 9%;
+}
+
+.sidebarOptionInactive.collapsed span,
+.sidebarOptionActive.collapsed span,
+.role-management-dashboard-heading.collapsed,
+.all-dashboard-heading.collapsed {
+  display: none;
+}
+
+.sidebarOptionInactive-icon.collapsed {
+  display: none;
+}
+
+.sidebar-handle-icon.collapsed {
+  transform: rotate(180deg);
+  left: 3.5em;
+  top: 1.5em;
+}
+.none {
+  display: none !important;
+}
